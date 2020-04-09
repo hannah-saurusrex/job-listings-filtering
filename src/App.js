@@ -6,15 +6,13 @@ import JobBoardComponent from './components/JobBoardComponent';
 function App() {
   const [jobs, setJobs] = useState([]);
 
-  useEffect(() => {
-    setJobs(data);
-  }, []);
+  useEffect(() => setJobs(data), []);
 
   console.log(jobs);
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <h1 className="text-4xl">Hello</h1>
       {
         jobs.length === 0 ? (
           <p>Jobs are fetching...</p>
