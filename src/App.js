@@ -12,7 +12,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className="text-4xl">Hello</h1>
+      <header className="bg-teal-500 mb-12 bg-repeat w-full">
+        <img src="/images/bg-header-desktop.svg" alt="bg-images" />
+      </header>
       {
         jobs.length === 0 ? (
           <p>Jobs are fetching...</p>
@@ -33,6 +35,7 @@ export default App;
 // 2. create job board component (we have an array of objects) ✅
 // 3. pull in the data fron the JSON file ✅
 // 4. pass down the data from the job board component ✅
-// 5. style it
+// 5a. style it ✅
+// 5b. style mobile
 // 6. filter component
 // 7. filter data
