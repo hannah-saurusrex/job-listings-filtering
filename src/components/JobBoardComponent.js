@@ -43,7 +43,7 @@ const JobBoardComponent = ({
                         <span className="bg-gray-800 text-white py-1 px-2 rounded-full uppercase text-sm">Featured</span>
                     )}
                 </h3>
-                <h2 className="font-bold text-xl my-2">{position}</h2>
+                <h2 className="font-bold text-xl my-2 hover:text-teal-500 cursor-pointer">{position}</h2>
                 <p className="text-gray-700">
                     {postedAt} · {contract} · {location}
                 </p>
@@ -51,7 +51,7 @@ const JobBoardComponent = ({
             <div className="flex items-center flex-wrap mt-4 mx-4 pt-4 border-t border-gray-400 border-solid lg:ml-auto lg:border-0 lg:pt-0 lg:mt-0">
                 {tags ? (
                         tags.map(tag => (
-                            <span onClick={() => handleTagClick(tag)} className="cursor-pointer bg-teal-100 font-bold text-teal-500 mr-4 mb-4 p-2 rounded lg:mb-0">{tag}</span>
+                            <span onClick={() => handleTagClick(tag)} className="cursor-pointer bg-teal-100 font-bold text-teal-500 mr-4 mb-4 p-2 rounded lg:mb-0 hover:bg-teal-500 hover:text-teal-100">{tag}</span>
                         ))
                     ) : ( '' )
                 } 

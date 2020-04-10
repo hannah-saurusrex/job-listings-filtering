@@ -59,7 +59,7 @@ function App() {
                   <span className="text-teal-500 bg-teal-100 p-2">
                   {filter}
                   </span>
-                  <span className="bg-teal-500 text-teal-100 p-2">&times;</span>
+                  <span className="bg-teal-500 text-teal-100 font-bold p-2 hover:bg-gray-800 hover:text-white">&times;</span>
               </span>
             ))}
             <button onCilck={clearFilters} className="font-bold text-gray-700 ml-auto cursor-pointer">Clear</button>
