@@ -71,7 +71,7 @@ function App() {
               </span>
             ))}
             <button
-              onCilck={clearFilters}
+              onClick={clearFilters}
               className="font-bold text-gray-700 ml-auto cursor-pointer"
             >
               Clear
